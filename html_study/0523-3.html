@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그 연습하기</title>
+    <style>
+       img {max-width:100%;}
+       #a {max-width:900px; margin:auto;}
+
+       header {background:linear-gradient(MintCream,LightSteelBlue); padding:20px;}
+       header h1 {margin:0; text-align:center;}
+       nav  {height:500px; background:radial-gradient(circle,LightYellow 10%, LightBlue 30%, pink 70%, LightYellow 100%); margin:20px auto; text-align:center; border-radius:20px; transition:0.5s;}
+       nav:hover {background:radial-gradient(circle, Lavender 20%, LightPink 50%, LightCyan 70%); transform:rotate(20deg);}
+       #b {display:flex;}
+       #b p {margin:0;}
+       #b p::first-letter {font-size:2rem; border:2px solid red; border-radius:10px; background:rgba(0,0,255, 0.5); padding-left:10px; padding-right:10px;}
+       #b p:hover::first-letter {background:lightsteelblue;}
+       main {background:beige; padding:20px; flex:2;}
+       main h2 {margin:0;}
+       /*main p:hover {background:red;}*/
+       aside {background:lightpink; padding:20px; flex:1;}
+       footer {background:lightskyblue; padding:20px; text-align:center;}
+       footer h3 {margin:0;}
+
+       /*폼태그 부분*/
+          form {max-width:220px; margin:auto; margin-right:0; display:flex; align-items:center; } 
+          form div {flex:1;}
+          form input {display:block;}
+          [type="text"] {margin-bottom:5px;}
+          form div input {width:150px;}
+          [type="submit"] {height:50px; background:white; border-radius:10px;}
+          [type="submit"]:hover {background:gray;}
+
+       /*반응형 부분 (작은기계장치의 적용되는 최대넓이는 0~550픽셀크기)*/
+       @media(max-width:550px) {
+        #b {flex-direction:column;}
+       }
+    </style>
+</head>
+<body>
+    <div id="a">
+        <header>
+            <h1>상단영역</h1>
+            <form action="#" method="post">
+                <div>
+                    <input type="text" placeholder="아이디를 입력하세요.">
+                    <input type="password" placeholder="비밀번호를 입력하세요.">
+                    </div>
+                   <input type="submit" value="확인">
+            </form>
+        </header> 
+        <nav></nav>
+        <div id="b">
+            <main>
+                <h2>메인영역</h2>
+                <p>법원은 최고법원인 대법원과 각급법원으로 조직된다. 국회는 법률에 저촉되지 아니하는 범위안에서 의사와 내부규율에 관한 규칙을 제정할 수 있다. 대통령은 국가의 안위에 관계되는 중대한 교전상태에 있어서 국가를 보위하기 위하여 긴급한 조치가 필요하고 국회의 집회가 불가능한 때에 한하여 법률의 효력을 가지는 명령을 발할 수 있다.</p>
+                
+                <p>국가는 법률이 정하는 바에 의하여 재외국민을 보호할 의무를 진다. 대한민국의 주권은 국민에게 있고, 모든 권력은 국민으로부터 나온다. 법률이 헌법에 위반되는 여부가 재판의 전제가 된 경우에는 법원은 헌법재판소에 제청하여 그 심판에 의하여 재판한다.</p>
+            </main>
+            <aside>
+                <h3>부가영역</h3>
+                <p>국무위원은 국정에 관하여 대통령을 보좌하며, 국무회의의 구성원으로서 국정을 심의한다. 계엄을 선포한 때에는 대통령은 지체없이 국회에 통고하여야 한다.</p>
+
+                <p>타인의 범죄행위로 인하여 생명·신체에 대한 피해를 받은 국민은 법률이 정하는 바에 의하여 국가로부터 구조를 받을 수 있다. 군인 또는 군무원이 아닌 국민은 대한민국의 영역안에서는 중대한 군사상 기밀·초병·초소·유독음식물공급·포로·군용물에 관한 죄중 법률이 정한 경우와 비상계엄이 선포된 경우를 제외하고는 군사법원의 재판을 받지 아니한다.</p>
+            </aside>
+        </div>
+        <footer>
+            <h3>하단영역</h3>
+            <img src="images/summer.jpg" alt="여름사진">
+        </footer>
+    </div>
+</body>
+</html>
