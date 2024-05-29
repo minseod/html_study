@@ -14,7 +14,7 @@ nav a {display: block;}
 /*메인메뉴*/
 .mainMenu {text-align: center; color:black; text-decoration: none;}
 nav li .subMenu {transition: 0.5s;}
-nav li:hover .subMenu {/*display: block;*/ height: 120px;}
+nav li:hover .subMenu {/*display: block;*/ height: 200px;}
 
 /*서브메뉴*/
 .subMenu {/*display: none;*/ background: rgba(255, 255, 255, .85); height: 0px; overflow: hidden;}
