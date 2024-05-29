@@ -17,7 +17,7 @@ nav li .subMenu {transition: 0.5s;}
 nav li:hover .subMenu {/*display: block;*/ height: 200px;}
 
 /*서브메뉴*/
-.subMenu {/*display: none;*/ background: rgba(255, 255, 255, .85); height: 0px; overflow: hidden;}
+.subMenu {/*display: none;*/ background: rgba(255, 255, 255, .85); height: 0px; overflow: hidden; font-size: 0.85rem;}
 
 /*메인*/
 main {height: 70vh; border: 1px solid aqua;}
