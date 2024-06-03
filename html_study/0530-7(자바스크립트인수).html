@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트인수</title>
+    <style>
+        table {width: 100%; max-width: 600px; margin: auto; border-collapse: collapse;}
+        caption {font-size: 1.3rem; padding-bottom: 10px; text-align: left;}
+        td,th {border: 1px solid #000; text-align: center; padding: 5px;}
+        #s {text-align: center;}
+        /*tr td:first-of-type {text-align: center;}*/
+    </style>
+</head>
+<body>
+    <table>
+        <caption>상품에 따른 상하반기 판매량</caption>
+        <colgroup>
+            <col style="background-color: azure;">
+            <col style="background-color: bisque;">
+            <col style="background-color: burlywood;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">구분</th>
+                <th scope="col" >데스크탑 pc</th>
+                <th scope="col">스마트폰</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row" onclick="sang('딸기라떼')">상반기 판매수</th>
+                <td onclick="gg()">2만대</td>
+                <td>5만대</td>
+            </tr>
+            <tr>
+                <th scope="row">하반기 판매수</th>
+                <td>3만대</td>
+                <td>7만대</td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="text-align: center;" >이 부분에 글자가 들어온다</p>
+    <script>
+        const ss=document.querySelector("tbody tr:first-child :nth-child(2)");
+        ss.style.background="brown";
+        const pp=document.querySelector("p");
+
+        function gg(){
+            //alert (  ss  );
+            pp.innerHTML=ss.innerHTML; //set=get
+        }
+        function sang(i){
+            //alert(i);
+            pp.innerHTML=i +"은 "+typeof i+"형 입니다.";
+        }
+    </script>
+</body>
+</html>
+
